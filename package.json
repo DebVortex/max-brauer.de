@@ -1,0 +1,23 @@
+{
+  "name": "max-brauer.de",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass src/static/main.scss dist/static/main.css",
+    "watch": "node-sass -w src/static/main.scss dist/static/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DebVortex/max-brauer.de.git"
+  },
+  "author": "Max Brauer <max@max-brauer.de>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/DebVortex/max-brauer.de/issues"
+  },
+  "homepage": "https://github.com/DebVortex/max-brauer.de#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
