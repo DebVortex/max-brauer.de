@@ -4,20 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node-sass src/static/main.scss dist/static/main.css",
-    "watch": "node-sass -w src/static/main.scss dist/static/main.css"
+    "build:scss": "node-sass src/static/main.scss src/static/main.css",
+    "build:minify": "css-minify -f src/static/main.css -o src/static",
+    "build": "npm run build:scss && npm run build:minify",
+    "watch": "npx watch -p src/static/main.scss -c 'npm run build'"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DebVortex/max-brauer.de.git"
   },
   "author": "Max Brauer <max@max-brauer.de>",
-  "license": "UNLICENSED",
+  "license": "SEE LICENSE FILE",
   "bugs": {
     "url": "https://github.com/DebVortex/max-brauer.de/issues"
   },
   "homepage": "https://github.com/DebVortex/max-brauer.de#readme",
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "css-minify": "^2.0.0",
+    "node-sass": "^7.0.3",
+    "watch-cli": "^0.2.3"
   }
 }
