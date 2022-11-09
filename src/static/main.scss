@@ -1,5 +1,11 @@
 @import "reset";
-@import url("/static/font/FiraMono-Medium.ttf");
+
+@font-face {
+    font-family: 'FiraMono-Medium';
+    font-style: medium;
+    font-weight: 400;
+    src: url("/static/font/FiraMono-Medium.ttf");
+}
 
 body {
     font: 18px "FiraMono-Medium", sans-serif;
